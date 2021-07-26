@@ -5,6 +5,7 @@ import { ProductList } from './styles';
 import { api } from '../../services/api';
 import { formatPrice } from '../../util/format';
 import { useCart } from '../../hooks/useCart';
+import Footer from '../../components/Footer';
 
 interface Product {
   id: number;
@@ -52,6 +53,7 @@ const Home = (): JSX.Element => {
   }
 
   return (
+    <>
     <ProductList>
       {products.map(product => (
         <li key={product.id}>
@@ -73,6 +75,8 @@ const Home = (): JSX.Element => {
       ))}
       
     </ProductList>
+    <Footer />
+    </>
   );
 };
 
