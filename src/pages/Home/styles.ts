@@ -5,13 +5,13 @@ export const ProductList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  list-style: none;
+  list-style: none;  
 
   li {
     display: flex;
     flex-direction: column;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 20px;
 
     img {
@@ -64,6 +64,13 @@ export const ProductList = styled.ul`
         text-align: center;
         font-weight: bold;
       }
+    }
+
+    transition: box-shadow 0.5s;
+
+    &:hover {      
+      outline: none !important;     
+      box-shadow: 0 0 20px #00FF00;
     }
   }
 `;

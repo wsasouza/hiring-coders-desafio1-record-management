@@ -7,6 +7,8 @@ import {
 import { useCart } from '../../hooks/useCart';
 import { formatPrice } from '../../util/format';
 import { Container, ProductTable, Total } from './styles';
+import { Link } from 'react-router-dom';
+
 
 interface Product {
   id: number;
@@ -74,23 +76,20 @@ const Cart = (): JSX.Element => {
             <td>
               <div>
                 <button
-                  type="button"
-                  data-testid="decrement-product"
+                  type="button"                  
                   disabled={product.amount <= 1}
                   onClick={() => handleProductDecrement(product)}
                 >
                   <MdRemoveCircleOutline size={20} />
                 </button>
                 <input
-                  type="text"
-                  data-testid="product-amount"
+                  type="text"                  
                   readOnly
                   value={product.amount}
                   style={{textAlign:'center'}}                  
                 />
                 <button
-                  type="button"
-                  data-testid="increment-product"
+                  type="button"                  
                   onClick={() => handleProductIncrement(product)}
                 >
                   <MdAddCircleOutline size={20} />
@@ -102,8 +101,7 @@ const Cart = (): JSX.Element => {
             </td>
             <td>
               <button
-                type="button"
-                data-testid="remove-product"
+                type="button"                
                 onClick={() => handleRemoveProduct(product.id)}
               >
                 <MdDelete size={20} />
@@ -115,7 +113,9 @@ const Cart = (): JSX.Element => {
       </ProductTable>
 
       <footer>
-        <button type="button">Finalizar pedido</button>
+        <Link to="/client" className="go">
+          Prosseguir
+        </Link>
 
         <Total>
           <span>TOTAL</span>

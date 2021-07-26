@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { darken, lighten } from 'polished';
 
+
 export const Container = styled.div`
   padding: 30px;
   background: #fff;
@@ -12,12 +13,13 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    button {
-      background: #c619d6;
+      .go {
+      background: #c619d6; 
+      text-decoration: none;     
       color: #fff;
       border: 0;
-      border-radius: 4px;
-      padding: 12px 20px;
+      border-radius: 8px;
+      padding: 10px 20px;
       font-weight: bold;
       text-transform: uppercase;
       transition: background 0.2s;
@@ -28,6 +30,7 @@ export const Container = styled.div`
     }
   }
 `;
+
 
 export const ProductTable = styled.table`
   width: 100%;

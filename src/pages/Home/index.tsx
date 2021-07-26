@@ -59,8 +59,7 @@ const Home = (): JSX.Element => {
         <strong>{product.title}</strong>
           <span>{product.priceFormatted}</span>
           <button
-            type="button"
-            data-testid="add-product-button"
+            type="button"            
             onClick={() => handleAddProduct(product.id)}
           >
             <div data-testid="cart-product-quantity">

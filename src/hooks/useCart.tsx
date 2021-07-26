@@ -1,7 +1,8 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
-import { toast } from 'react-toastify';
 import { api } from '../services/api';
 import { Product } from '../types';
+
+import { useToast } from "../hooks/toast";
 
 interface CartProviderProps {
   children: ReactNode;
@@ -22,6 +23,7 @@ interface CartContextData {
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({ children }: CartProviderProps): JSX.Element {
+  const { addToast } = useToast();
   const [cart, setCart] = useState<Product[]>(() => {
     const storagedCart = localStorage.getItem('@GamersWorld:cart');
 
@@ -44,8 +46,13 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
        const amount = currentAmount + 1;
 
        if (amount > stockAmount) {
-         toast.error('Quantidade solicitada fora de estoque');
-         return;
+          addToast({
+            type: "error",
+            title: "Estoque insuficiente!",
+            description:
+              "Não temos a quantidade solicitada disponivel no momento.",
+          });
+          return;
        }
 
        if (productExists) {
@@ -65,7 +72,12 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
        localStorage.setItem('@GamersWorld:cart', JSON.stringify(updatedCart));
 
     } catch {
-       toast.error('Erro na adição do produto');
+        addToast({
+          type: "error",
+          title: "Erro ao adicionar o produto!",
+          description:
+            "Caso o erro persista, contactar o administrador.",
+        });
     }
   };
 
@@ -82,7 +94,12 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
           throw Error();
        }
     } catch {
-       toast.error('Erro na remoção do produto');
+        addToast({
+          type: "error",
+          title: "Erro ao remover o produto!",
+          description:
+            "Caso o erro persista, contactar o administrador.",
+        });
     }
   };
 
@@ -100,7 +117,12 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
        const stockAmount = stock.data.amount;
 
        if (amount > stockAmount) {
-         toast.error('Quantidade solicitada fora de estoque');
+          addToast({
+            type: "error",
+            title: "Estoque insuficiente!",
+            description:
+              "Não temos a quantidade solicitada disponivel no momento.",
+          });        
          return;
        } 
 
@@ -116,7 +138,12 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
        }
 
     } catch {
-       toast.error('Erro na alteração de quantidade do produto');
+      addToast({
+        type: "error",
+        title: "Erro ao adicionar o produto!",
+        description:
+          "Caso o erro persista, contactar o administrador.",
+      });
     }
   };
 
