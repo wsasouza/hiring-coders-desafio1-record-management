@@ -61,9 +61,9 @@ const Profile: React.FC = () => {
             .test("is-cep", "CEP não é válido", () => validateCep(data.cep)),
           street: Yup.string().required("Logradouro é obrigatório"),
           number: Yup.number()
+            .required("Número é obrigatório")
             .positive("O número deve ser positivo")
-            .integer("O número deve ser inteiro")
-            .required("Número é obrigatório"),
+            .integer("O número deve ser inteiro"),
           complement: Yup.string(),
           district: Yup.string().required("Bairro é obrigatório!"),
           city: Yup.string().required("Cidade é obrigatório!"),

@@ -35,7 +35,7 @@ export const Container = styled.div<ContainerProps>`
     css`
       color: #c619d6;
       border-color: #c619d6;
-      box-shadow: 0 0 5px #00FF00;
+      box-shadow: 0 0 5px #c619d6;
     `}
 
   ${(props) =>
@@ -54,6 +54,7 @@ export const Container = styled.div<ContainerProps>`
 
     &::placeholder {
       color: #7159c1;
+      font-style: italic;
     }
   }
 
