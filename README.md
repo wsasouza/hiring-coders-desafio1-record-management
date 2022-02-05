@@ -10,13 +10,13 @@
 <h1 align="center">Hiring Coders Desafio 02</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/wsasouza/hiring-coders-challenge2?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/wsasouza/hiring-coders-desafio2-record-management?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/wsasouza/hiring-coders-challenge2?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/wsasouza/hiring-coders-desafio2-record-management?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/wsasouza/hiring-coders-challenge2?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/wsasouza/hiring-coders-desafio2-record-management?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/wsasouza/hiring-coders-challenge2?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/wsasouza/hiring-coders-desafio2-record-management?color=56BEB8">
   
 </p>
 
