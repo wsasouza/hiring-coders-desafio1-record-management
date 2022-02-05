@@ -1,29 +1,84 @@
-# BlackFriday Loja 🛒
+<div align="center" id="top"> 
+  <img src="./src/assets/store-gamesworld.gif" alt="Hiring Coders Challenge2" />
+
+&#xa0;
+
+<a href="https://gamersworld-store.netlify.app/">Demo</a>
+
+</div>
+
+<h1 align="center">Hiring Coders Desafio 02</h1>
+
 <p align="center">
- <img src="https://i.pinimg.com/564x/df/c6/3c/dfc63ca27a0680d09024067d5f2464da.jpg">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/wsasouza/hiring-coders-challenge2?color=56BEB8">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/wsasouza/hiring-coders-challenge2?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/wsasouza/hiring-coders-challenge2?color=56BEB8">
+
+  <img alt="License" src="https://img.shields.io/github/license/wsasouza/hiring-coders-challenge2?color=56BEB8">
+  
 </p>
 
-## Desafio#2 Hiring Coders 
-- Criar uma sistema de e-commerce para visualização dos produtos, carrinho de compras e formulario de dados do cliente e endereço.
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/wsasouza" target="_blank">Author</a>
+</p>
 
-### Entregáveis: 
+<br>
 
-- Página de produtos, tema black friday ✔️
+## :dart: About
 
-- Carrinho de compras, salvando os dados no local storage ✔️
+Simulação de funcionamento de carrinho de compras com cadastro de cliente persistindo os dados no local storage. Para prover os dados dos produtos foi utilizado uma API Fake.
 
-- Salvar dados dos clientes no localstorage ✔️
+## :sparkles: Features
 
-## Tecnologias  
-- ReactJS
-- Typescript
-- JsonServer
+:heavy_check_mark: Página de Produtos;\
+:heavy_check_mark: Pagina de Carrinho de Compras;\
+:heavy_check_mark: Página de cadastro do cliente;\
+:heavy_check_mark: Controle de quantidade disponível;
 
-## Link do projeto em produção
-- <a href="https://gamersworld-store.netlify.app/">GamersWorld Store</a>
+## :rocket: Technologies
 
-<h3 align="center"> Desenvolvido por Walter S. A. Souza 🚀</h3>
-<h3 align="center">
-<a href="https://www.linkedin.com/in/wsasouza/" target="_blank">
-  <img src="https://img.shields.io/badge/-LinkedIn-511281?style=flat&logo=linkedin&logoColor=white" width="100px">
-</a> </h3>
+The following tools were used in this project:
+
+- [React](https://pt-br.reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Json-Server](https://github.com/typicode/json-server)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting
+
+```bash
+# Clone this project
+$ git clone https://github.com/wsasouza/hiring-coders-desafio2-record-management
+
+# Access
+$ cd hiring-coders-desafio2-record-management
+
+# Install dependencies
+$ yarn
+
+# Run the project
+$ yarn start
+
+# The server will initialize in the <http://localhost:3000>
+```
+
+## :memo: License
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+Made with :heart: by <a href="https://github.com/wsasouza" target="_blank">Walter Santos de Andrade Souza</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
